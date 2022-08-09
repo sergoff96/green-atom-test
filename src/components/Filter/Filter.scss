@@ -1,0 +1,20 @@
+@import "src/assets/styles/variables";
+
+.filter {
+  padding: 16px;
+  box-shadow: $box-shadow-default;
+  border-radius: 4px;
+
+  &__header {
+    color: $color-text-secondary;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__checkbox {
+    margin-bottom: 8px;
+  }
+}

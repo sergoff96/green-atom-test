@@ -1,0 +1,33 @@
+@import "src/assets/styles/variables";
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__input {
+    display: none;
+  }
+
+  &__fake-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid $color-brand-primary;
+    margin-right: 8px;
+  }
+
+  &__input:checked + &__fake-checkbox:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../../assets/icons/checked.svg");
+  }
+
+  &__checkbox-label {
+  }
+}

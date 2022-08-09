@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  width: 1000px;
+  margin: 20px auto 0;
+
+  &__filter-wrapper {
+    margin-right: 20px;
+    flex-basis: calc(30% - (25px / 2));
+  }
+
+  &__filter {
+    position: sticky;
+    top: 20px;
+  }
+
+  &__container {
+    flex-basis: calc(70% - (25px / 2));
+  }
+}

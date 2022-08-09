@@ -1,0 +1,38 @@
+@import './src/assets/styles/variables';
+
+.toggler {
+  display: flex;
+  width: 100%;
+
+  &__radio-button {
+    flex-basis: 50%;
+
+    &:last-child .toggler__radio-label{
+      border-radius: 0 4px 4px 0;
+    }
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: $color-text-secondary;
+    background: $color-background-white;
+    height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+    border: 1px solid $color-border-default;
+    border-radius: 4px 0 0 4px;
+  }
+
+  &__radio-input:checked + &__radio-label {
+    background: $color-brand-primary;
+    border-color: $color-brand-primary;
+    color: $color-background-white;
+  }
+}
